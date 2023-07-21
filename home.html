@@ -8,39 +8,206 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="javascript.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
-<div class="weone">
-    <header class="header">
-        <div  class="logo">
-            <a href="weone.html" style="text-decoration: none;color: #E45A4F;">Weone</a>
+    <nav>
+        <div class="container">
+            <div><a href="weone.html" class="logo">Weone</a></div>
             <div class="search">
-                <span class="fas fa-search"></span>
+                <span class="uil uil-search"></span>
                 <input type="search" placeholder="Search for items, owners and etc.">
             </div>
             <div class="upload">
-                <label for="upload.new">Upload</label>
+                <label class="btn btn-primary" for="upload-new">Upload</label>
                 <div class="profile-picture">
-                    <img src="">
+                    <img src="https://img.freepik.com/premium-vector/pretty-hijab-woman-side-profile-with-colorful-flower-bouquet_185694-1105.jpg">
                 </div>
             </div>
         </div>
-    </header>
-    <section>
-        <div class="left">
-            <nav>
-                <ul>
-                    <li><a href="#" style="text-decoration: none; color:#E45A4F"><span class="fas fa-home"></span>&nbsp Home</a></li>
-                    <li><a href="#" style="text-decoration: none; color:#E45A4F"><span class="fas fa-solid fa-star"></span>&nbsp Explore</a></li>
-                    <li><a href="#" style="text-decoration: none; color:#E45A4F"><span class="fas fa-search"></span>&nbsp Search</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="right">
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="profile">
+                    <div class="profile-picture">
+                        <img src="https://img.freepik.com/premium-vector/pretty-hijab-woman-side-profile-with-colorful-flower-bouquet_185694-1105.jpg?w=2000">
+                    </div>
+                    <div class="handle">
+                        <h5>Anzum Shreya</h5>
+                        <p class="text-muted">
+                            @anzumshreya
+                        </p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="#" class="menu-item active"><span><i class="uil uil-home"></i></span><h5>Home</h5></a>
+                    <a href="#" class="menu-item"><span><i class="uil uil-compass"></i></span><h5>Explore</h5></a>
+                    <a href="#" class="menu-item">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span><h5>Notifications</h5>
+                        <div class="notification-popup" id="notification">
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://wallpapers.com/images/hd/cute-profile-picture-jeik5d6qizh6dxxr.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ben walker</b> liked your post
+                                    <small class="text-muted">1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://e1.pxfuel.com/desktop-wallpaper/903/679/desktop-wallpaper-97-aesthetic-best-profile-pic-for-instagram-for-boy-instagram-dp-boys.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>James Bond</b> liked your post
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Taylor Swift</b> started following you
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Taylor Swift</b> liked your post
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Taylor_Swift_-_Speak_Now_%28Taylor%27s_Version%29.png">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Taylor Swift</b> liked your post
+                                    <small class="text-muted">2 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-picture">
+                                    <img src="https://images.girlslife.com/posts/041/41764/oliviarodrigo1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Olivia Rodrigo</b> liked your post
+                                    <small class="text-muted">3 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="menu-item" id="messages-notifications"><span><i class="uil uil-envelope-alt"><small class="notification-count">2+</small></i></span><h5>Message</h5></a>
+                    <a href="#" class="menu-item"><span><i class="uil uil-bookmark"></i></span><h5>Bookmarks</h5></a>
+                    <a href="#" class="menu-item"><span><i class="uil uil-plus-circle"></i></span><h5>Requested</h5></a>
+                    <a href="#" class="menu-item"><span><i class="uil uil-setting"></i></span><h5>Settings</h5></a>
+                
+                </div>
+                <label for="upload-new" class="btn btn-primary">Upload New</label>
+            </div>
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://img.freepik.com/premium-vector/pretty-hijab-woman-side-profile-with-colorful-flower-bouquet_185694-1105.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://www.datocms-assets.com/39109/1622554808-1622312687174978-ariana-grande.jpg">
+                        </div>
+                        <p class="name">Ariana Grande</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://images.girlslife.com/posts/041/41764/oliviarodrigo1.jpg">
+                        </div>
+                        <p class="name">Olivia Rodrigo</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://pub-static.fotor.com/assets/projects/pages/d5bdd0513a0740a8a38752dbc32586d0/fotor-03d1a91a0cec4542927f53c87e0599f6.jpg">
+                        </div>
+                        <p class="name">Jonny Wong</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://wallpaperaccess.com/full/2213424.jpg">
+                        </div>
+                        <p class="name">Ed Sheeran</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-picture">
+                            <img src="https://i.pinimg.com/564x/31/44/7e/31447e25b7bc3429f83520350ed13c15.jpg">
+                        </div>
+                        <p class="name">Blue Bird</p>
+                    </div>
+                </div>
+                <form class="create-post">
+                    <div class="profile-picture">
+                        <img src="https://img.freepik.com/premium-vector/pretty-hijab-woman-side-profile-with-colorful-flower-bouquet_185694-1105.jpg">
+                    </div>
+                    <input type="text" placeholder="What's on your mind?">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-picture">
+                                    <img scr="https://images.summitmedia-digital.com/cosmo/images/2020/08/26/julia-barretto-profile-picture-idea-1598430021.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Lana Del Rey</h3>
+                                    <small>&#2547; 5000 • 2 minutes ago</small>
+                                </div>
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
 
+                        <div class="picture">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/18/58/360_F_331185893_VcVvKhO46bKmqBf3oN6hqLu0aEXpvg4G.jpg">
+                        </div>
+                        <div class="action-button">
+                            <div class="reaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-plus-circle"></i></span>
+                            </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-share"></i></span>
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                        </div>
+                        
+                        <div class="liked-by">
+                            <span><img scr="https://images.pexels.com/photos/3454298/pexels-photo-3454298.jpeg"></span>
+                            <span><img scr="https://images.pexels.com/photos/3444087/pexels-photo-3444087.jpeg"></span>
+                            <span><img scr="https://i.pinimg.com/564x/84/3f/b1/843fb1ef384a0a97c99250d2dcf0e5a1.jpg"></span>
+                            <p>Liked by <b>Selena Gomez</b> and <b>1,345 others</b></p>
+                        </div>
+                        <div class="caption">
+                            <p><b>Lana Del Rey</b> Bridal lehenga for rent! <span class="hashtag">#wedding #bride</span>></p>
+                        </div>
+                        <div class="text-muted">13 requests • 107 shares • 234 bokmarks</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="right">
+
+            </div>
         </div>
-    </section>
-</div>
+    </main>
 </body>
 </html>
