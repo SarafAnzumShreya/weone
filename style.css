@@ -39,7 +39,7 @@ body{
 }
 .profile-picture{
     width: 2rem;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -76,7 +76,8 @@ img{
 }
 .text-muted{
     color: var(--color-gray);
-    font-size: .75rem;
+    font-size: .65rem;
+    opacity: 80%;
 }
 
 /*=====================navbar===============*/
@@ -90,6 +91,7 @@ nav{
     top: 0;
     z-index: 10;
     display: flex;
+    box-shadow: 0 0 .5rem 0 var(--color-primary);
 }
 nav .container{
     display: flex;
@@ -137,7 +139,7 @@ main{
 main .container{
     display: grid;
     grid-template-columns: 35vh auto 20vw;
-    column-gap: 2rem;
+    column-gap: 1rem;
     position: relative;
 }
 main .container .left{
@@ -305,7 +307,7 @@ main .container .left .profile{
     font-size: 0.7rem;
     width: 100%;
     background: red;
-    position: relative;
+    position:relative;
     overflow: hidden;
 }
 
@@ -349,7 +351,7 @@ main .container .left .profile{
 }
 
 .middle .stories .profile-picture{
-    wid2rem;
+    width: 2rem;
     height: 2rem;
     align-self: start;
     border: 3px solid var(--color-primary);
@@ -382,7 +384,7 @@ main .container .left .profile{
     background: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     font-size: 0.75rem;
     line-height: 1.5;
 }
@@ -395,6 +397,7 @@ main .container .left .profile{
 .middle .feed .user{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .middle .feed .picture{
@@ -403,21 +406,32 @@ main .container .left .profile{
     margin: 0.7rem 0;
 }
 
-.middle .feed .reaction-buttons{
+/* .middle .feed .reaction-buttons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.4rem;
     margin: 0.6rem;
+} */
+
+.middle .feed .action-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+    margin-bottom: 0rem;
 }
 
 .middle .liked-by{
     display: flex;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
 }
 
 .middle .liked-by span{
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.3rem;
+    height: 1.3rem;
     display: block;
     border-radius: 50%;
     overflow: hidden;
